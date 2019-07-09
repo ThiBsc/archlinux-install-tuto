@@ -100,7 +100,7 @@ hwclock --systohc
 ```
 
 #### Localization
-Uncomment your locale in `nano /etc/locale.gen` (ex. *en_GB.UTF-8 UTF-8*) and run `locale-gen` command.  
+Uncomment your locale in `/etc/locale.gen` (ex. *en_GB.UTF-8 UTF-8*) and run `locale-gen` command.  
 - Set the `LANG` variable:
   ```bash
   # enter in edition with: "nano /etc/locale.conf" and write:
