@@ -20,7 +20,7 @@ First of all, you have to boot from your USB flash drive
 - Power up your computer and press the key to enter in BIOS (depends on your motherboard but it's often `f1`, `f2` or `del`)
 - Change the boot options to start from your USB and quit with validation
 
-You will see this screen:
+You will see this screen:  
 ![boot screen](screenshots/bootscreen.png)
 
 ### 2 - The configuration
@@ -193,7 +193,8 @@ Run these commands:
 - `systemctl enable lightdm.service`
 - `reboot`
 
-With my AZERTY keyboard, I have to run a command before the reboot to set lightdm in AZERTY layout: `localectl --no-convert set-x11-keymap fr`
+With my AZERTY keyboard, I have to run a command before the reboot to set lightdm in AZERTY layout:  
+`localectl --no-convert set-x11-keymap fr`
 
 Felicitation, you will have this:  
 <img alt="desktop boot" src="screenshots/desktop_boot.png" width="50%"/>  
