@@ -1,6 +1,7 @@
 # Archlinux tutorial for beginner :books:
 ![ArchLinux badge](https://img.shields.io/badge/Doc-ArchLinux-lightblue.svg)
-![Tutorial contributors](https://img.shields.io/github/contributors/thibsc/video-editor.svg)  
+![Tutorial contributors](https://img.shields.io/github/contributors/thibsc/archlinux-install-tuto
+.svg)  
 It is a step-by-step guide to getting a complete desktop environment with ArchLinux  
 A large part of this tutorial is taken directly from the official documentation: [ArchWiki](https://wiki.archlinux.org/index.php/installation_guide)
 
