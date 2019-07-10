@@ -217,4 +217,4 @@ To have a theme that I found beautier than the Adwaita default theme, I have ins
 *in writing*
 
 ### Beautiful GRUB
-You can also change the GRUB appearance when boot, for example by using [grub2-theme by @vinceluice](https://github.com/vinceliuice/grub2-themes)
+You can also change the GRUB appearance when boot, for example by using [grub2-theme from @vinceluice](https://github.com/vinceliuice/grub2-themes)
