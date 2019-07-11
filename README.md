@@ -214,7 +214,27 @@ To have graphic configuration tools, I suggest to install these packages:
 To have a theme that I found beautier than the Adwaita default theme, I have install the [`arc-gtk-theme`](https://github.com/horst3180/arc-theme) and [`arc-icon-theme`](https://github.com/horst3180/arc-icon-theme) from [@horst3180](https://github.com/horst3180) (with `sudo pacman ...`).
 
 ### plymouth
-*in writing*
+After the GRUB, you can set a loading image.
+- Install plymouth
+  ```bash
+  sudo pacman -Syu base-devel git
+  git clone https://aur.archlinux.org/plymouth.git
+  cd plymouth/
+  makepkg -si
+  ```
+- Now, we have to edit `/etc/mkinitcpio.conf` and modify the line `HOOKS=(base udev [...])` by `HOOKS=(base udev plymouth [...])`
+- Add splash in grub config. Edit `/etc/default/grub` and add `splash` at the end of the line begin by `GRUB_CMDLINE_LINUX_DEFAULT`
+- Regenerate GRUB: `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+- Rebuild your initrd: `mkinitcpio -p linux`
+- Disable lightdm and enable lightdm-plymouth.service
+  ```bash
+  sudo systemctl disable lightm.service
+  sudo systemctl enable lightdm-plymouth.service
+  ```
+- Configure plymouth
+  - Edit `/etc/plymouth/plymouthd.conf`, set `ShowDelay` value to 0
+  - `plymouth-set-default-theme -R spinfinity`
+- `reboot`
 
 ### Beautiful GRUB
 You can also change the GRUB appearance when boot, for example by using [grub2-theme from @vinceluice](https://github.com/vinceliuice/grub2-themes)
